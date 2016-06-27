@@ -18,11 +18,12 @@ Plant.prototype.decreaseHeight = function (amountToDecrease) {
 };
 //Tree Functions
 Tree.prototype.grow = function (amount) {
-	this.height += amount;
-	this.branch += Math.floor(this.height / 10);
+	this.increaseHeight(amount);
+	this.branch = Math.floor(this.height / 10);
 };
 Tree.prototype.trim = function (amount) {
-	this.height -= amount;
+	this.decreaseHeight(amount);
+	this.branch = Math.floor(this.height / 10);
 	this.branch -= 1;
 };
 //The types of trees
