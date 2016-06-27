@@ -1,11 +1,19 @@
 {
-  "name": "templateone",
+  "name": "orchard",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a template designed to by cloned for simple projects that require JQuery, and need tasks to be automated with Gulp.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmfwarren/OrchardOfTrees.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmfwarren/OrchardOfTrees/issues"
+  },
+  "homepage": "https://github.com/wmfwarren/OrchardOfTrees#readme"
 }
