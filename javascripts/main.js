@@ -1,3 +1,5 @@
+"use strict";
+
 function Plant() {
 	this.height = 0;
 }
@@ -16,8 +18,13 @@ Plant.prototype.decreaseHeight = function (amountToDecrease) {
 };
 //Tree Functions
 Tree.prototype.grow = function (amount) {
-	this.branch += amount;
+	this.height += amount;
+	this.branch += Math.floor(this.height / 10);
 };
 Tree.prototype.trim = function (amount) {
-	this.branch -= amount;
+	this.height -= amount;
+	this.branch -= 1;
 };
+//The types of trees
+var pearTree = new Tree();
+var oakTree = new Tree();
